@@ -17,7 +17,7 @@ export default function Edit() {
       }),
       []
   );
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetch(API + `/api/articles/${id}`)
       .then((res) => res.json())
