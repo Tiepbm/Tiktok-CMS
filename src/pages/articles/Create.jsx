@@ -2,11 +2,12 @@ import {useMemo, useRef} from "react";
 import {Button, Form, Input, message} from "antd";
 import {API} from "../../api";
 import JoditEditor from "jodit-react";
+import {useNavigate} from "react-router-dom";
 
 export default function Create() {
   const [form] = Form.useForm();
   const editor = useRef(null);
-
+    const navigate = useNavigate();
 
   const config = useMemo(() => ({
         readonly: false, // all options from https://xdsoft.net/jodit/docs/,
@@ -22,6 +23,7 @@ export default function Create() {
       body: JSON.stringify({ ...values }),
     });
     message.success("Đã tạo bài viết!");
+      navigate('/admin/articles');
   };
 
   return (
