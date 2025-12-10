@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import { Table, Button, Popconfirm } from "antd";
-import { Link } from "react-router-dom";
-import { API } from "../../api";
+import {useEffect, useState} from "react";
+import {Button, Popconfirm, Table} from "antd";
+import {Link} from "react-router-dom";
+import {API} from "../../api";
 
 export default function List() {
   const [articles, setArticles] = useState([]);

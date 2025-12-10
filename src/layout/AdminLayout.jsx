@@ -1,10 +1,6 @@
-import { Layout, Menu } from "antd";
-import {
-  FileTextOutlined,
-  PlusOutlined,
-  DashboardOutlined,
-} from "@ant-design/icons";
-import { Link } from "react-router-dom";
+import {Layout, Menu} from "antd";
+import {DashboardOutlined, FileTextOutlined, PlusOutlined,} from "@ant-design/icons";
+import {Link} from "react-router-dom";
 
 const { Header, Sider, Content } = Layout;
 

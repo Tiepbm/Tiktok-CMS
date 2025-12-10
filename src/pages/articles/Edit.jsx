@@ -1,8 +1,7 @@
-import {useEffect, useMemo, useRef, useState} from "react";
-import { Form, Input, Button, message } from "antd";
-import { useParams } from "react-router-dom";
-import Editor from "../../components/Editor";
-import { API } from "../../api";
+import {useEffect, useMemo, useRef} from "react";
+import {Button, Form, Input, message} from "antd";
+import {useParams} from "react-router-dom";
+import {API} from "../../api";
 import JoditEditor from "jodit-react";
 
 export default function Edit() {
